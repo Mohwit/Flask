@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <style> 
+        form {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        form div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+            
+        }
+
+        input[type="number"] {
+            width: 70px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <div>
+          <label for="math">Math:</label>
+          <input type="number" id="math" name="math">
+        </div>
+        <div>
+          <label for="science">Science:</label>
+          <input type="number" id="science" name="science">
+        </div>
+        <div>
+          <label for="computer-science">Computer Science:</label>
+          <input type="number" id="computer-science" name="computer-science">
+        </div>
+        <div>
+          <label for="data-science">Data Science:</label>
+          <input type="number" id="data-science" name="data-science">
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>      
+</body>
+</html>
