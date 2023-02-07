@@ -1,0 +1,20 @@
+.card {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.card-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-content {
+    font-size: 24px;
+    text-align:  center;
+    
+}
+.result {
+    color: green;
+}
