@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .heading {
+        text-align: center;
+        margin-top: 5rem;
+      }
+      .video-container {
+        width: 800px;
+        height: 500px;
+        margin: 50px auto;
+        border: 8px solid rgb(7, 185, 249);
+        border-radius: 10px;
+        box-shadow: 5px 0px 20px 0px rgba(1, 0, 2, 0.2);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .video-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading"> 
+        <h1> Video Stream </h1>
+    </div>
+
+    <div class="video-container">
+      <img src="{{ url_for('video_feed') }}">
+    </div>
+    
+  </body>
+</html>
